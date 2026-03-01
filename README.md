@@ -130,9 +130,7 @@ It leverages:
 
 Instead of the standard X-mixer, we use an XY mixer:
 
-$$
-H_M = \sum_{i<j} (X_i X_j + Y_i Y_j)
-$$
+$$H_M = \sum_{i=1}^{N}\sum_{j=i+1}^{N} (X_i X_j + Y_i Y_j)$$
 
 The XY mixer conserves Hamming weight:
 
