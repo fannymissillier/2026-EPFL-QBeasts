@@ -33,7 +33,7 @@ This term captures the efficiency gained by reviewing related cases.
 Classical fraud systems often use "Greedy Algorithms" that pick the top-ranked individual risks. However, once you add **Interaction Terms ($\omega_{ij}$)**, the problem becomes NP-hard.
 
 1.  **Combinatorial Explosion:** Picking $k$ out of $N$ cases with cross-correlations creates a massive search space. The number of possible combinations is defined by the binomial coefficient $\binom{N}{k}$.
-2.  **Entangled Risks:** The "optimal" solution isn't just a list of the $k$ most fraudulent-looking people; it is the specific **combination** of people that provides the highest total "Gain Évité" while maximizing investigative synergy.
+2.  **Entangled Risks:** The "optimal" solution isn't just a list of the $k$ most fraudulent-looking people; it is the specific **combination** of people that provides the highest total "Avoided Gain" while maximizing investigative synergy.
 
 Quantum computers use **superposition** and **interference** to explore all possible combinations simultaneously, identifying global optima in the correlation network that classical systems frequently overlook.
 
