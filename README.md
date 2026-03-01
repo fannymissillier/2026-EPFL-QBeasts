@@ -13,7 +13,7 @@ Our model utilizes Quantum Optimization (QAOA) to solve this selection challenge
 
 To find the optimal fraud investigation strategy, we minimize the following Hamiltonian $H(x)$, where $x_i$ is a binary decision variable (0 or 1) indicating whether case $i$ is selected for manual fraud review.
 
-$$H(x)=-\sum_{i=1}^{N}b_ix_i-\sum_{i<j}\omega_{ij}x_ix_j+\lambda(\sum_{i=1}^{N}x_i-k)^2$$
+$$H(x)=-\sum_{i=1}^{N} b_i x_i - \sum_{i<j} \omega_{ij} x_i x_j + \lambda (\sum_{i=1}^{N} x_i - k)^2$$
 
 ### 1. Individual avoided loss ($b_i$)
 
