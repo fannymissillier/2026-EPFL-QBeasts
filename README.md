@@ -49,7 +49,7 @@ We define a binary decision variable:
 We minimize the following QUBO function:
 
 $$
-H(x) = -\sum_{i=1}^{N} v_i x_i
+Q(x) = -\sum_{i=1}^{N} v_i x_i
        -\sum_{i=1}^{N}\sum_{j=i+1}^{N} \omega_{ij} x_i x_j
        +\lambda (\sum_{i=1}^{N} x_i - k)^2
 $$
