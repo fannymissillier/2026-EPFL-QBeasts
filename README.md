@@ -4,7 +4,7 @@
 
 ---
 
-## 🚨 The Challenge
+## The Challenge!
 
 Insurance fraud represents a major financial burden for insurers worldwide.
 
@@ -28,7 +28,7 @@ This is a combinatorial optimization problem.
 
 ---
 
-## 🎯 Our Approach
+## Our Approach
 
 Instead of ranking individuals, we optimize the entire portfolio of k investigations.
 
@@ -39,7 +39,7 @@ with a constraint-preserving XY mixer.
 
 ---
 
-## 🧮 Mathematical Formulation (QUBO)
+## Mathematical Formulation (QUBO)
 
 We define a binary decision variable:
 
@@ -92,7 +92,7 @@ This constraint is embedded directly into the Hamiltonian using a quadratic pena
 
 ---
 
-## 🔥 Why This Is Hard (Classically)
+## Why This Is A Classically Hard Problem ?
 
 With interaction terms omega_ij, the problem becomes equivalent to:
 
@@ -113,7 +113,7 @@ Greedy methods:
 
 ---
 
-## ⚛ Why Quantum?
+## Why Quantum?
 
 QAOA is designed for Ising-type Hamiltonians with quadratic interactions.
 
@@ -126,7 +126,7 @@ It leverages:
 
 ---
 
-## 🌀 Constraint-Preserving XY Mixer
+## Constraint-Preserving XY Mixer
 
 Instead of the standard X-mixer, we use an XY mixer:
 
@@ -149,7 +149,7 @@ Benefits:
 
 ---
 
-## 🔁 From QUBO to Quantum Circuit
+## From QUBO to Quantum Circuit
 
 Pipeline:
 
@@ -161,20 +161,42 @@ Pipeline:
 
 ---
 
-## 📊 Classical Benchmark
+## Classical Benchmark
 
 We benchmark QAOA against classical methods:
 
-- Greedy selection  
-- Local search  
-- Tabu search  
-- Exact brute force (small N)  
-
-We evaluate:
-- Solution quality  
-- Convergence behavior  
-- Scaling trends  
+ - Use of a Brute Force method used as an 'oracle' to check QAOA optimization results
+ - Test of a heuristic Tupo Method
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
+
+
+2026-EPFL-QBeasts/
+│
+├── fraud_detection.ipynb (contains all QAOA implementations on QBread cloud servers 
+│
+├── Benchmark.ipynb (contains classical implementations to benchmark with quantum solution)
+│   
+└── underwriting_dataset.csv (our LLM generated dataset, manually pre-processed)
+│
+└── README.md
+
+---
+
+## Summary
+
+We propose a quantum-enhanced framework for:
+
+Optimal fraud investigation allocation under resource constraints.
+
+Key contributions:
+
+- Rigorous QUBO modeling  
+- Interaction-aware optimization  
+- Constraint-preserving XY mixer  
+- Full classical benchmarking  
+- End-to-end implementation  
+
+This project demonstrates how quantum optimization can address real-world portfolio selection problems in structured, correlated environments.
