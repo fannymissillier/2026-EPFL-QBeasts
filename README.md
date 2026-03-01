@@ -171,15 +171,20 @@ We benchmark QAOA against classical methods:
 ## Repository Structure
 
 
+```
 2026-EPFL-QBeasts/
 │
-├── fraud_detection.ipynb (contains all QAOA implementations on QBread cloud servers 
+├── fraud_detection.ipynb
+│   (contains all QAOA implementations on QBraid cloud servers)
 │
-├── Benchmark.ipynb (contains classical implementations to benchmark with quantum solution)
-│   
-└── underwriting_dataset.csv (our LLM generated dataset, manually pre-processed)
+├── Benchmark.ipynb
+│   (contains classical implementations to benchmark with quantum solution)
+│
+├── underwriting_dataset.csv
+│   (our LLM generated dataset, manually pre-processed)
 │
 └── README.md
+```
 
 ---
 
