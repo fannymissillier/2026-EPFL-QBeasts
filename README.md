@@ -126,6 +126,18 @@ It leverages:
 
 ---
 
+## From QUBO to Quantum Circuit
+
+Pipeline:
+
+1. QUBO formulation  
+2. QUBO → Ising Hamiltonian transformation  
+3. Automatic circuit generation  
+4. Parameter optimization (gamma, beta)  
+5. Measurement → optimal portfolio
+
+---
+
 ## Constraint-Preserving XY Mixer
 
 Instead of the standard X-mixer, we use an XY mixer:
@@ -144,18 +156,6 @@ Benefits:
 - Reduced search space  
 - Faster convergence  
 - No need for large penalty coefficients  
-
----
-
-## From QUBO to Quantum Circuit
-
-Pipeline:
-
-1. QUBO formulation  
-2. QUBO → Ising Hamiltonian transformation  
-3. Automatic circuit generation  
-4. Parameter optimization (gamma, beta)  
-5. Measurement → optimal portfolio  
 
 ---
 
