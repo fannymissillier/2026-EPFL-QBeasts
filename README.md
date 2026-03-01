@@ -11,7 +11,7 @@ Our model utilizes Quantum Optimization (QAOA) to solve this selection challenge
 
 ## The Mathematical Model (Hamiltonian)
 
-To find the optimal fraud investigation strategy, we minimize the following Hamiltonian $H(x)$, where $x_i \in \left\{0,1\right\}$ represents whether case $i$ is selected for manual fraud review.
+To find the optimal fraud investigation strategy, we minimize the following Hamiltonian $H(x)$, where $x_i \in \{0,1\}$ represents whether case $i$ is selected for manual fraud review.
 
 $$ H(x) = - \sum_{i=1}^{N} b_i x_i - \sum_{i<j} \omega_{ij} x_i x_j + \lambda \left( \sum_{i=1}^{N} x_i - k \right)^2 $$
 
